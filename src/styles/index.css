@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html {
+    background-color: #08090B;
+    color: #C6CAD0;
+    font-family: 'Manrope', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    background: #08090B;
+    overflow-x: hidden;
+  }
+
+  /* Minimal Luxury Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #08090B;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #15191F;
+    border: 1px solid #1E232B;
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #287BFF;
+  }
+}
+
+@layer components {
+  /* Editorial Section Labels */
+  .section-label {
+    @apply font-mono text-[11px] tracking-luxury text-[#8B929E] uppercase font-medium flex items-center gap-2;
+  }
+
+  /* Metallic Silver Gradient Text */
+  .text-silver-gradient {
+    background: linear-gradient(180deg, #FFFFFF 0%, #C6CAD0 60%, #858A94 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Electric Blue Gradient Text */
+  .text-electric-gradient {
+    background: linear-gradient(135deg, #F5F6F8 0%, #63A0FF 50%, #287BFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Luxury Action Button - Electric Blue */
+  .btn-electric {
+    @apply inline-flex items-center justify-center gap-2 px-7 py-3 rounded-full font-editorial font-semibold text-xs tracking-wider uppercase text-white bg-[#287BFF] hover:bg-[#3D8CFF] transition-all duration-300 shadow-[0_0_20px_rgba(40,123,255,0.35)] hover:shadow-[0_0_35px_rgba(40,123,255,0.6)] hover:-translate-y-0.5 active:translate-y-0 cursor-pointer;
+  }
+
+  /* Luxury Outline Button - Metallic Silver */
+  .btn-outline-silver {
+    @apply inline-flex items-center justify-center gap-2 px-7 py-3 rounded-full font-editorial font-semibold text-xs tracking-wider uppercase text-[#F5F6F8] bg-[#15191F] border border-[#1E232B] hover:border-[#C6CAD0] hover:bg-[#1E232B] transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 cursor-pointer;
+  }
+
+  /* Minimal Editorial Tag */
+  .tag-editorial {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-[11px] font-mono tracking-wider text-[#8B929E] uppercase bg-[#15191F] border border-[#1E232B];
+  }
+
+  /* Subtle Geometric Border */
+  .geo-box {
+    @apply relative border border-[#1E232B] bg-[#15191F]/40 backdrop-blur-md rounded-xl;
+  }
+}
+
+/* Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+

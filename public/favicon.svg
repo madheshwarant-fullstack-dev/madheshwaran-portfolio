@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <radialGradient id="spiderGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff1e42" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0b1120" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="webGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff1e42"/>
+      <stop offset="50%" stop-color="#ff476f"/>
+      <stop offset="100%" stop-color="#00d2ff"/>
+    </linearGradient>
+  </defs>
+  <!-- Background Circle -->
+  <circle cx="32" cy="32" r="30" fill="#060913" stroke="url(#webGrad)" stroke-width="2"/>
+  <circle cx="32" cy="32" r="28" fill="url(#spiderGlow)" opacity="0.3"/>
+  
+  <!-- Web Lines -->
+  <path d="M32 6 L32 58 M6 32 L58 32 M14 14 L50 50 M50 14 L14 50" stroke="#ff1e42" stroke-width="1" stroke-opacity="0.35"/>
+  <path d="M32 18 Q39 25 39 32 Q39 39 32 46 Q25 39 25 32 Q25 25 32 18 Z" stroke="#00d2ff" stroke-width="1.2" stroke-opacity="0.6" fill="none"/>
+  
+  <!-- Spider / MW Emblem -->
+  <path d="M28 22 L32 26 L36 22 L32 20 Z" fill="#ff1e42"/>
+  <path d="M30 26 L34 26 L35 38 L32 42 L29 38 Z" fill="#ff1e42"/>
+  <!-- Spider Legs -->
+  <path d="M28 27 Q22 20 17 24 M28 29 Q20 28 16 33 M28 32 Q19 36 17 42 M28 34 Q22 43 21 47" stroke="#ff1e42" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+  <path d="M36 27 Q42 20 47 24 M36 29 Q44 28 48 33 M36 32 Q45 36 47 42 M36 34 Q42 43 43 47" stroke="#00d2ff" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+  <!-- Eyes -->
+  <polygon points="30,28 31,31 29,31" fill="#ffffff"/>
+  <polygon points="34,28 35,31 33,31" fill="#ffffff"/>
+</svg>

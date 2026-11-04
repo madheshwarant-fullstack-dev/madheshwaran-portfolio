@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="100%" stop-color="#f1f5f9" />
+    </linearGradient>
+    <linearGradient id="primary" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dc2626" />
+      <stop offset="100%" stop-color="#991b1b" />
+    </linearGradient>
+    <linearGradient id="book1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ea580c" />
+      <stop offset="100%" stop-color="#c2410c" />
+    </linearGradient>
+    <linearGradient id="book2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+    <linearGradient id="book3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0f172a" flood-opacity="0.08" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg)" rx="16" />
+
+  <!-- Subtle Web Graphic in Top Corner -->
+  <path d="M720,0 L800,80 M750,0 L800,50 M780,0 L800,20 M700,0 Q750,50 800,100 M680,0 Q750,70 800,120" stroke="#dc2626" stroke-width="1.2" stroke-opacity="0.15" fill="none" />
+
+  <!-- Browser Window Frame -->
+  <g filter="url(#shadow)" transform="translate(40, 35)">
+    <!-- Header Bar -->
+    <rect width="720" height="430" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5" />
+    <rect width="720" height="42" rx="12" fill="#ffffff" />
+    <path d="M0,42 L720,42" stroke="#e2e8f0" stroke-width="1.5" />
+    <!-- Window Controls -->
+    <circle cx="24" cy="21" r="5.5" fill="#ef4444" />
+    <circle cx="42" cy="21" r="5.5" fill="#f59e0b" />
+    <circle cx="60" cy="21" r="5.5" fill="#10b981" />
+    <!-- URL Bar -->
+    <rect x="90" y="10" width="380" height="22" rx="6" fill="#f8fafc" stroke="#e2e8f0" />
+    <text x="105" y="25" font-family="monospace" font-size="11" fill="#64748b">https://old-book-store.dev/browse</text>
+
+    <!-- App Header -->
+    <g transform="translate(24, 60)">
+      <circle cx="16" cy="16" r="16" fill="url(#primary)" />
+      <path d="M11,10 L21,10 L21,22 L16,19 L11,22 Z" fill="#ffffff" />
+      <text x="42" y="21" font-family="system-ui, sans-serif" font-weight="700" font-size="16" fill="#0f172a">OLD BOOK STORE</text>
+      <text x="180" y="21" font-family="system-ui, sans-serif" font-size="12" fill="#dc2626" font-weight="600">Vintage &amp; Academic Collection</text>
+      
+      <!-- Search & Cart -->
+      <rect x="420" y="4" width="180" height="26" rx="6" fill="#f8fafc" stroke="#e2e8f0" />
+      <text x="435" y="21" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8">Search books by title, author...</text>
+      <rect x="615" y="4" width="55" height="26" rx="6" fill="#dc2626" />
+      <text x="625" y="21" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#ffffff">Cart (3)</text>
+    </g>
+
+    <!-- Divider -->
+    <line x1="24" y1="105" x2="696" y2="105" stroke="#f1f5f9" stroke-width="1.5" />
+
+    <!-- Categories Pills -->
+    <g transform="translate(24, 118)">
+      <rect x="0" y="0" width="55" height="22" rx="11" fill="#dc2626" />
+      <text x="14" y="15" font-family="system-ui, sans-serif" font-size="10.5" font-weight="600" fill="#ffffff">All (140)</text>
+
+      <rect x="65" y="0" width="80" height="22" rx="11" fill="#f8fafc" stroke="#e2e8f0" />
+      <text x="76" y="15" font-family="system-ui, sans-serif" font-size="10.5" fill="#475569">Computer Science</text>
+
+      <rect x="155" y="0" width="70" height="22" rx="11" fill="#f8fafc" stroke="#e2e8f0" />
+      <text x="166" y="15" font-family="system-ui, sans-serif" font-size="10.5" fill="#475569">Engineering</text>
+
+      <rect x="235" y="0" width="65" height="22" rx="11" fill="#f8fafc" stroke="#e2e8f0" />
+      <text x="246" y="15" font-family="system-ui, sans-serif" font-size="10.5" fill="#475569">Literature</text>
+
+      <rect x="310" y="0" width="75" height="22" rx="11" fill="#f8fafc" stroke="#e2e8f0" />
+      <text x="321" y="15" font-family="system-ui, sans-serif" font-size="10.5" fill="#475569">Competitive Exams</text>
+    </g>
+
+    <!-- Books Grid: 3 Cards -->
+    <g transform="translate(24, 155)">
+      <!-- Book Card 1 -->
+      <g>
+        <rect width="210" height="250" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.2" />
+        <rect x="12" y="12" width="186" height="135" rx="6" fill="#fef2f2" />
+        <!-- Book Spine & Cover Illustration -->
+        <rect x="60" y="24" width="90" height="110" rx="4" fill="url(#book1)" filter="url(#shadow)" />
+        <rect x="63" y="24" width="8" height="110" fill="#9a3412" />
+        <line x1="75" y1="45" x2="140" y2="45" stroke="#ffffff" stroke-width="2.5" />
+        <line x1="75" y1="55" x2="125" y2="55" stroke="#ffffff" stroke-width="1.5" opacity="0.8" />
+        <text x="75" y="115" font-family="system-ui, sans-serif" font-size="8" font-weight="700" fill="#ffffff">DATA STRUCTURES</text>
+        <!-- Card Details -->
+        <text x="14" y="172" font-family="system-ui, sans-serif" font-weight="700" font-size="13" fill="#0f172a">Algorithms &amp; Data Structures</text>
+        <text x="14" y="190" font-family="system-ui, sans-serif" font-size="11" fill="#64748b">Tanenbaum • 2nd Edition</text>
+        <text x="14" y="215" font-family="system-ui, sans-serif" font-weight="800" font-size="15" fill="#dc2626">₹280</text>
+        <text x="62" y="215" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8" text-decoration="line-through">₹750</text>
+        <rect x="135" y="198" width="62" height="24" rx="5" fill="#dc2626" />
+        <text x="148" y="214" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#ffffff">Add +</text>
+      </g>
+
+      <!-- Book Card 2 -->
+      <g transform="translate(230, 0)">
+        <rect width="210" height="250" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.2" />
+        <rect x="12" y="12" width="186" height="135" rx="6" fill="#eff6ff" />
+        <rect x="60" y="24" width="90" height="110" rx="4" fill="url(#book2)" filter="url(#shadow)" />
+        <rect x="63" y="24" width="8" height="110" fill="#1e40af" />
+        <line x1="75" y1="45" x2="140" y2="45" stroke="#ffffff" stroke-width="2.5" />
+        <line x1="75" y1="55" x2="125" y2="55" stroke="#ffffff" stroke-width="1.5" opacity="0.8" />
+        <text x="75" y="115" font-family="system-ui, sans-serif" font-size="8" font-weight="700" fill="#ffffff">DATABASE SYSTEMS</text>
+        <text x="14" y="172" font-family="system-ui, sans-serif" font-weight="700" font-size="13" fill="#0f172a">Database System Concepts</text>
+        <text x="14" y="190" font-family="system-ui, sans-serif" font-size="11" fill="#64748b">Silberschatz • Complete Edition</text>
+        <text x="14" y="215" font-family="system-ui, sans-serif" font-weight="800" font-size="15" fill="#dc2626">₹340</text>
+        <text x="62" y="215" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8" text-decoration="line-through">₹920</text>
+        <rect x="135" y="198" width="62" height="24" rx="5" fill="#dc2626" />
+        <text x="148" y="214" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#ffffff">Add +</text>
+      </g>
+
+      <!-- Book Card 3 -->
+      <g transform="translate(460, 0)">
+        <rect width="210" height="250" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.2" />
+        <rect x="12" y="12" width="186" height="135" rx="6" fill="#ecfdf5" />
+        <rect x="60" y="24" width="90" height="110" rx="4" fill="url(#book3)" filter="url(#shadow)" />
+        <rect x="63" y="24" width="8" height="110" fill="#065f46" />
+        <line x1="75" y1="45" x2="140" y2="45" stroke="#ffffff" stroke-width="2.5" />
+        <line x1="75" y1="55" x2="125" y2="55" stroke="#ffffff" stroke-width="1.5" opacity="0.8" />
+        <text x="75" y="115" font-family="system-ui, sans-serif" font-size="8" font-weight="700" fill="#ffffff">JAVASCRIPT GUIDE</text>
+        <text x="14" y="172" font-family="system-ui, sans-serif" font-weight="700" font-size="13" fill="#0f172a">JavaScript: Definitive Guide</text>
+        <text x="14" y="190" font-family="system-ui, sans-serif" font-size="11" fill="#64748b">David Flanagan • 7th Edition</text>
+        <text x="14" y="215" font-family="system-ui, sans-serif" font-weight="800" font-size="15" fill="#dc2626">₹210</text>
+        <text x="62" y="215" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8" text-decoration="line-through">₹650</text>
+        <rect x="135" y="198" width="62" height="24" rx="5" fill="#dc2626" />
+        <text x="148" y="214" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#ffffff">Add +</text>
+      </g>
+    </g>
+  </g>
+</svg>
