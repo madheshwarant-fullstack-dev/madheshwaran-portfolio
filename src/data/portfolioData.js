@@ -25,7 +25,7 @@ export const PROFILE = {
   githubUrl: "https://github.com/madheshwarant-fullstack-dev",
   linkedinUrl: "https://www.linkedin.com/in/madheshwaran556",
   avatarUrl: "/madheshwaran.png",
-  resumeUrl: "/certificates/vinsup-certificate.pdf",
+  resumeUrl: "/Madheshwaran_T_Resume.pdf",
 };
 
 export const EDITOR_FILES = [
@@ -394,6 +394,12 @@ export const PROCESS_STEPS = [
 
 export const CERTIFICATES = [
   {
+    title: "Google AI Professional Certificate",
+    issuer: "Google",
+    date: "October 2026",
+    file: "/Madheshwaran_T_Resume.pdf"
+  },
+  {
     title: "Full Stack Web Development (MERN)",
     issuer: "Vinsup Skill Academy",
     date: "17/08/2026",
@@ -416,6 +422,12 @@ export const CERTIFICATES = [
     issuer: "MongoDB University",
     date: "Aug 20, 2025",
     file: "/certificates/mongodb-basics.pdf"
+  },
+  {
+    title: "Python Essentials 1",
+    issuer: "Cisco",
+    date: "Certified 2025",
+    file: "/Madheshwaran_T_Resume.pdf"
   },
   {
     title: "Web Development Internship",

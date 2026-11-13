@@ -63,11 +63,10 @@ export default function Navbar({ onOpenHireMe, onNavigate }) {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled
           ? 'bg-[#08090B]/90 backdrop-blur-md border-b border-[#1E232B] py-3.5 shadow-2xl'
           : 'bg-transparent py-5'
-      }`}
+        }`}
     >
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 flex items-center justify-between">
         {/* LOGO & NAME */}
@@ -84,7 +83,7 @@ export default function Navbar({ onOpenHireMe, onNavigate }) {
 
           <div className="flex flex-col">
             <span className="font-editorial font-bold text-sm tracking-wider text-[#F5F6F8] group-hover:text-white transition-colors uppercase">
-              MADHESHWARAN T.
+              MADHESHWARAN T
             </span>
             <span className="font-mono text-[9px] tracking-luxury text-[#8B929E] uppercase">
               Full Stack Developer

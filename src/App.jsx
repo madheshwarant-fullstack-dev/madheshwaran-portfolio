@@ -76,11 +76,11 @@ export default function App() {
 
   const handleOpenResume = () => {
     setSelectedCertificate({
-      title: "Madheshwaran T. — Full Stack Developer",
-      role: "Verified Professional Credentials Dossier",
+      title: "Madheshwaran T. — Official Resume",
+      role: "MERN Stack Developer & Full Stack Engineer",
       certificate: PROFILE.resumeUrl,
-      issuer: "Vinsup Skill Academy & University Degree",
-      date: "Certified 2026",
+      issuer: "G.T.N. Arts College • B.Sc. Computer Science",
+      date: "Updated 2026",
     });
     setCertModalOpen(true);
   };

@@ -69,7 +69,7 @@ export default function About({ onOpenResume }) {
                 className="btn-electric !py-3 !px-6 !text-xs cursor-pointer"
               >
                 <Download size={14} />
-                <span>Download Resume Dossier</span>
+                <span>View & Download Resume</span>
               </button>
 
               <a
