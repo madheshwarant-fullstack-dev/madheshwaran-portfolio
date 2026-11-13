@@ -93,16 +93,29 @@ export default function CertificateModal({ certificate, isOpen, onClose }) {
               <CheckCircle2 size={14} />
               <span>Verified Authentic Record</span>
             </div>
-            {certUrl && (
-              <a
-                href={certUrl}
-                download
-                className="inline-flex items-center gap-1.5 text-[#287BFF] hover:underline"
-              >
-                <Download size={13} />
-                <span>Download Document</span>
-              </a>
-            )}
+            <div className="flex items-center gap-4">
+              {certificate.verificationUrl && (
+                <a
+                  href={certificate.verificationUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-emerald-400 hover:underline"
+                >
+                  <ExternalLink size={13} />
+                  <span>Verify on Coursera</span>
+                </a>
+              )}
+              {certUrl && (
+                <a
+                  href={certUrl}
+                  download
+                  className="inline-flex items-center gap-1.5 text-[#287BFF] hover:underline"
+                >
+                  <Download size={13} />
+                  <span>Download Document</span>
+                </a>
+              )}
+            </div>
           </div>
         </motion.div>
       </div>

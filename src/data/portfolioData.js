@@ -395,9 +395,11 @@ export const PROCESS_STEPS = [
 export const CERTIFICATES = [
   {
     title: "Google AI Professional Certificate",
-    issuer: "Google",
-    date: "October 2026",
-    file: "/Madheshwaran_T_Resume.pdf"
+    issuer: "Google & Coursera",
+    date: "Oct 13, 2026",
+    file: "/certificates/google-ai-certificate.jpg",
+    verificationUrl: "https://coursera.org/verify/professional-cert/P5N4VINTQYSDK",
+    description: "8-Course Professional Certificate in AI Fundamentals, Brainstorming, Research, Data Analysis, App Building & Deployment."
   },
   {
     title: "Full Stack Web Development (MERN)",

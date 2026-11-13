@@ -9,7 +9,7 @@ export default function EnquiryModal({ isOpen, onClose, defaultService = '' }) {
     name: '',
     email: '',
     projectType: defaultService || 'Business Website Development',
-    budget: '₹15,000 — ₹40,000',
+    budget: 'Starting from ₹1,000',
     description: '',
   });
 
@@ -162,10 +162,11 @@ export default function EnquiryModal({ isOpen, onClose, defaultService = '' }) {
                     onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
                     className="w-full px-3 py-2.5 rounded-xl bg-[#15191F] border border-[#1E232B] text-xs text-[#F5F6F8] focus:outline-none focus:border-[#287BFF]"
                   >
-                    <option value="Under ₹15,000">Under ₹15,000</option>
-                    <option value="₹15,000 — ₹40,000">₹15,000 — ₹40,000</option>
-                    <option value="₹40,000 — ₹80,000">₹40,000 — ₹80,000</option>
-                    <option value="₹80,000+ Enterprise">₹80,000+ Enterprise</option>
+                    <option value="Starting from ₹1,000">Starting from ₹1,000</option>
+                    <option value="₹1,000 — ₹5,000">₹1,000 — ₹5,000</option>
+                    <option value="₹5,000 — ₹15,000">₹5,000 — ₹15,000</option>
+                    <option value="₹15,000 — ₹30,000">₹15,000 — ₹30,000</option>
+                    <option value="₹30,000+ Enterprise">₹30,000+ Enterprise</option>
                   </select>
                 </div>
               </div>

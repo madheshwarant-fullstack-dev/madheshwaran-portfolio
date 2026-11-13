@@ -46,7 +46,7 @@ export default function Footer() {
                   <span className="text-[#287BFF]">T</span>
                 </div>
                 <span className="font-editorial font-bold text-lg text-[#F5F6F8] tracking-wider uppercase">
-                  MADHESHWARAN T.
+                  MADHESHWARAN T
                 </span>
               </div>
               <p className="text-xs sm:text-sm text-[#8B929E] max-w-sm leading-relaxed mb-6">

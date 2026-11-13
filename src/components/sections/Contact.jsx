@@ -5,10 +5,11 @@ import confetti from 'canvas-confetti';
 import { PROFILE, SERVICES } from '../../data/portfolioData';
 
 const BUDGET_RANGES = [
-  'Under ₹1,000 (Basic Website / Portfolio)',
-  '₹1,000 — ₹1,500 (Standard Commercial)',
-  '₹1,500 — ₹3,000 (Full Stack Platform)',
-  '₹3,000+ (Custom Enterprise / E-commerce)',
+  'Starting from ₹1,000 (Starter Project / Consultation)',
+  '₹1,000 — ₹5,000 (Basic Website / Portfolio)',
+  '₹5,000 — ₹15,000 (Standard Commercial)',
+  '₹15,000 — ₹30,000 (Full Stack MERN Platform)',
+  '₹30,000+ (Custom Enterprise / E-commerce)',
 ];
 
 export default function Contact({ preselectedService = '' }) {
@@ -16,7 +17,7 @@ export default function Contact({ preselectedService = '' }) {
     name: '',
     email: '',
     projectType: preselectedService || 'Business Website Development',
-    budget: '₹15,000 — ₹40,000 (Standard Commercial)',
+    budget: 'Starting from ₹1,000 (Starter Project / Consultation)',
     description: '',
   });
 
@@ -93,14 +94,19 @@ export default function Contact({ preselectedService = '' }) {
           >
             {/* Status Pill Card */}
             <div className="p-6 rounded-2xl bg-[#15191F]/70 border border-[#1E232B] space-y-3">
-              <div className="flex items-center gap-2.5">
-                <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse shadow-[0_0_10px_#34d399]" />
-                <span className="font-mono text-xs text-white uppercase tracking-wider font-semibold">
-                  {PROFILE.status}
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2.5">
+                  <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse shadow-[0_0_10px_#34d399]" />
+                  <span className="font-mono text-xs text-white uppercase tracking-wider font-semibold">
+                    {PROFILE.status}
+                  </span>
+                </div>
+                <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-mono font-semibold bg-[#287BFF]/15 text-[#63A0FF] border border-[#287BFF]/30">
+                  Starts ₹1,000
                 </span>
               </div>
               <p className="text-xs sm:text-sm text-[#8B929E] leading-relaxed">
-                Open for select freelance projects, web application builds, and full stack engineering roles.
+                Open for select freelance projects, web application builds, and engineering roles with packages starting from <strong className="text-[#F5F6F8]">₹1,000</strong>.
               </p>
             </div>
 
@@ -202,7 +208,7 @@ export default function Contact({ preselectedService = '' }) {
                 className="w-full btn-electric !py-3.5 !text-xs cursor-pointer flex items-center justify-center gap-2"
               >
                 <Sparkles size={15} />
-                <span>HIRE ME DIRECTLY</span>
+                <span>HIRE ME DIRECTLY — FROM ₹1,000</span>
                 <ArrowUpRight size={15} />
               </a>
             </div>

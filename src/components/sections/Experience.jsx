@@ -160,7 +160,7 @@ export default function Experience({ onOpenCertificate }) {
               </h3>
             </div>
             <span className="text-xs font-mono text-[#8B929E] hidden sm:block">
-              5 Official Accreditations
+              {CERTIFICATES.length} Official Accreditations
             </span>
           </div>
 
