@@ -46,21 +46,19 @@ export default function Experience({ onOpenCertificate }) {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.15 }}
-                className={`group relative rounded-3xl border transition-all duration-300 p-8 sm:p-10 ${
-                  isFirst
+                className={`group relative rounded-3xl border transition-all duration-300 p-8 sm:p-10 ${isFirst
                     ? 'border-[#287BFF]/40 bg-gradient-to-br from-[#15191F]/90 via-[#0E1117]/90 to-[#08090B]/90 shadow-[0_0_30px_rgba(40,123,255,0.08)]'
                     : 'border-[#1E232B] bg-[#0E1117]/80 hover:border-[#287BFF]/30'
-                }`}
+                  }`}
               >
                 {/* Top Badge & Company Bar */}
                 <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb-6 border-b border-[#1E232B]">
                   <div className="flex items-start gap-4">
                     <div
-                      className={`w-12 h-12 rounded-2xl flex items-center justify-center shrink-0 border ${
-                        isFirst
+                      className={`w-12 h-12 rounded-2xl flex items-center justify-center shrink-0 border ${isFirst
                           ? 'bg-[#287BFF]/10 text-[#287BFF] border-[#287BFF]/30 shadow-[0_0_15px_rgba(40,123,255,0.25)]'
                           : 'bg-[#15191F] text-[#C6CAD0] border-[#1E232B]'
-                      }`}
+                        }`}
                     >
                       <Briefcase size={22} />
                     </div>
@@ -102,7 +100,7 @@ export default function Experience({ onOpenCertificate }) {
                     <p className="text-sm sm:text-base text-[#C6CAD0] leading-relaxed">
                       {exp.summary}
                     </p>
-                    
+
                     {/* Specific details */}
                     {exp.company === 'Tamil Info Technology' && (
                       <ul className="space-y-2 text-xs sm:text-sm text-[#8B929E]">
